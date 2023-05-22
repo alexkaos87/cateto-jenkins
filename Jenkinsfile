@@ -14,7 +14,7 @@ pipeline {
 
       steps {
         
-        echo "hello, i'm multibranch job"
+        echo "hello, i'm multibranch job from fix-123"
 
       }
 
