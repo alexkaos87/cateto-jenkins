@@ -13,12 +13,8 @@ pipeline {
     stage('Hello') {
 
       steps {
-
-        sh '''
-
-          java -version
-
-        '''
+        
+        echo "hello, i'm multibranch job"
 
       }
 
