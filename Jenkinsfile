@@ -11,7 +11,14 @@ pipeline {
   }
 
   stages {
-
+    stage('Collect Data') {
+      
+      steps {
+        echo 'clean before any checkout'
+        cleanWs()
+        echo 'update workspace with latest git repository in default branch master'
+        git 'https://github.com/alexkaos87/BankOCR.git'
+            }
     stage('Hello') {
 
       steps {
