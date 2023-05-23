@@ -16,7 +16,7 @@ pipeline {
 
       steps {
         
-        echo "Hello, I'm Cateto Multibranch with Alessio"
+        echo "Hello, I'm Cateto Multibranch with push example on BankOCR"
 
       }
 
