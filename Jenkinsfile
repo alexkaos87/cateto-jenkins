@@ -17,7 +17,7 @@ pipeline {
 
       steps {
         
-        echo "Hello, I'm Cateto Multibranch with prova"
+        echo "Hello, I'm Cateto Multibranch with prova 2"
 
       }
 
