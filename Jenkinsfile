@@ -1,7 +1,7 @@
 pipeline {
     agent any
     triggers {
-        upstream 'Weekly Overall Check, '
+        upstream 'Weekly-Overall-Check, '
     }
     stages {
         stage('Collect Data') {
