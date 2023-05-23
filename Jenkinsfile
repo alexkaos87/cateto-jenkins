@@ -17,7 +17,7 @@ pipeline {
 
       steps {
         
-        echo "Hello, I'm Cateto Multibranch with pollSCM"
+        echo "Hello, I'm Cateto Multibranch with pollSCM 2"
 
       }
 
