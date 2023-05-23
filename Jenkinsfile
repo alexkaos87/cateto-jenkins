@@ -1,8 +1,8 @@
 pipeline {
     agent any
     triggers {
-      cron('*/3 * * * *') // at the 23:59 of every day H 23 * * *
-      pollSCM 'H/2 * * * *'
+      cron('*/4 * * * *') // at the 23:59 of every day H 23 * * *
+      pollSCM 'H/10 * * * *'
     }
     environment {
         changedFilesToAnalize = ''
