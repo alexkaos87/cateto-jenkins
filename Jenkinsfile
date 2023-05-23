@@ -2,6 +2,7 @@ pipeline {
     agent any
     triggers {
         upstream 'Weekly-Overall-Check, '
+        pollSCM 'H/10 * * * *'
     }
     stages {
         stage('Collect Data') {
