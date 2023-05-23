@@ -4,12 +4,7 @@ pipeline {
   triggers {
       pollSCM 'H/3 * * * *'
   }
-  options {
-
-    buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')
-
-  }
-
+  
   stages {
     stage('Collect Data') {
       
@@ -18,7 +13,8 @@ pipeline {
         cleanWs()
         echo 'update workspace with latest git repository in default branch master'
         git 'https://github.com/alexkaos87/BankOCR.git'
-            }
+      }
+      
     stage('Hello') {
 
       steps {
