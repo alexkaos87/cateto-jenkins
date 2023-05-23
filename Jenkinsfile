@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Collect Data') {
             steps {
-                echo 'clean before any checkout'
+                echo 'Clean before any checkout'
                 cleanWs()
                 echo 'update workspace with latest git repository in default branch master'
                  checkout([$class: 'GitSCM',
