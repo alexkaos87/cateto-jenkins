@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    triggers {
+      cron('*/15 * * * *') // # at the 0.00 of every Sunday H 0 * * 0
+    }
     stages {
         stage('Collect Data') {
             steps {
