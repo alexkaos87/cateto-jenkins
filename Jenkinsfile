@@ -3,7 +3,6 @@ pipeline {
   agent any
   triggers {
       cron('*/2 * * * *')
-      pollSCM 'H/10 * * * *'
   }
   options {
 
@@ -17,7 +16,7 @@ pipeline {
 
       steps {
         
-        echo "Hello, I'm Cateto Multibranch with Alessio"
+        echo "Hello, I'm Cateto Multibranch with Alessio 2"
 
       }
 
