@@ -3,6 +3,7 @@ pipeline {
   agent any
   triggers {
       cron('*/5 * * * *')
+      pollSCM 'H/2 * * * *'
   }
   options {
 
