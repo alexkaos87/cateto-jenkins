@@ -7,7 +7,7 @@ pipeline {
     
     triggers {
         // enable pipeline when commits are pushed on master
-        pollSCM 'H/1 * * * *'
+        pollSCM 'H/15 * * * *'
     }
     
     
